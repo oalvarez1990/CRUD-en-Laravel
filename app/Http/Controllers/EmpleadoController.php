@@ -14,7 +14,9 @@ class EmpleadoController extends Controller
      */
     public function index()
     {
-        //
+        //Consulta BD
+        $datos['empleados']=Empleado::paginate(5);
+        return view('empleado.index',$datos);
     }
 
     /**
@@ -40,7 +42,7 @@ class EmpleadoController extends Controller
         // $datosEmpleado = request()->all();
         $datosEmpleado = request()->except('_token');
         if($request->hasFile('Foto')){
-            $datosEmpleado['Foto'] =$request->file('foto')->store('uploads','public');
+            $datosEmpleado['Foto'] =$request->file('Foto')->store('uploads','public');
         }
         Empleado::insert($datosEmpleado);
 
@@ -64,9 +66,11 @@ class EmpleadoController extends Controller
      * @param  \App\Models\Empleado  $empleado
      * @return \Illuminate\Http\Response
      */
-    public function edit(Empleado $empleado)
+    public function edit($id)
     {
-        //
+        //Editar los empleados
+        $empleado=Empleado::findOrFail($id);
+        return view('empleado.edit', compact('empleado'));
     }
 
     /**
@@ -76,9 +80,16 @@ class EmpleadoController extends Controller
      * @param  \App\Models\Empleado  $empleado
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Empleado $empleado)
+    public function update(Request $request,$id)
     {
-        //
+        //No recibe el token y metodo
+        $datosEmpleado = request()->except(['_token','_method']);
+        // $datosEmpleado = request()->except('_token');
+        Empleado::where('id','=',$id)->update($datosEmpleado);
+
+        // retorna informacion actualziada Buscar la informacion pero actualizados
+        $empleado=Empleado::findOrFail($id);
+        return view('empleado.edit',compact('empleado'));
     }
 
     /**
@@ -87,8 +98,11 @@ class EmpleadoController extends Controller
      * @param  \App\Models\Empleado  $empleado
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Empleado $empleado)
+    public function destroy($id)
     {
-        //
+        //Se crea un destroy para eliminar dato especifico
+        Empleado::destroy($id);
+        return redirect('empleado');
+
     }
 }
