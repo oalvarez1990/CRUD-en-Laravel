@@ -107,4 +107,3 @@ class EmpleadoController extends Controller
     }
 }
 
-//agreGAR CRUD

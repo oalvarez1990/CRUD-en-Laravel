@@ -30,6 +30,9 @@ Mostrar lista de empleado
                    <a href="{{ url('/empleado/'. $empleado->id.'/edit') }}">
                        Editar
                    </a>
+                   {{-- <a href="{{ url('/empleado/'. $empleado->id.'/create') }}">
+                       Crear
+                   </a> --}}
                     
                     {{-- Se crea metodo para borrar dato --}}
                     <form action="{{ url('/empleado/' . $empleado->id) }}" method="post">

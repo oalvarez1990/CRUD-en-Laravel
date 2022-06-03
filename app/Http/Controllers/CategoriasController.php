@@ -15,6 +15,9 @@ class CategoriasController extends Controller
     public function index()
     {
         //
+        $category = Categorias::all();
+        
+        return view('index',compact('category'));
     }
 
     /**
@@ -25,6 +28,7 @@ class CategoriasController extends Controller
     public function create()
     {
         //
+        return view('Categorias.create');
     }
 
     /**
@@ -35,8 +39,17 @@ class CategoriasController extends Controller
      */
     public function store(Request $request)
     {
-        //
-        
+        //Crear reglas de validacion 
+        {
+            $validatedData = $request->validate([
+                'category' => 'required|max:255',
+                'create' => 'required',
+                'update' => 'required',
+            ]);
+            $show = Categorias::create($validatedData);
+       
+            return redirect('/Categorias')->with('success', 'Categorias is successfully saved');
+        }       
     }
 
     /**

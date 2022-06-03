@@ -4,7 +4,7 @@ Editar empleados
 
     @csrf
 
-    {{ method_field('PACHT') }}
+    {{ method_field('PUT') }}
 
 @include('empleado.form');
 

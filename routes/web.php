@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmpleadoController;
+use App\Http\Controllers\CategoriasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,8 +23,15 @@ Route::get('/', function () {
 Route::get('/empleado', function () {
     return view('empleado.index');
 });
+//Una forma de realizar ruteo aprender por controlador
+Route::get('/Categorias', function () {
+    return view('Categorias.layout');
+});
 //Se crea ruta para acceder a cada clase
 // Route::get('empleado/create',[EmpleadoController::class,'create']);
 
 //Se crea ruta para todas as clases
 Route::resource('empleado',EmpleadoController::class);
+
+//Se crea ruta para las categorias
+Route::resource('Categorias',CategoriasController::class);
