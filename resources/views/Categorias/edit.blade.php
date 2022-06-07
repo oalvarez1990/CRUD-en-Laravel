@@ -26,7 +26,8 @@
                     @csrf
 
                     @method('PATCH')
-                    <label for="country_name">Game Name:</label>
+
+                    <label for="country_name">El :</label>
                     <input type="text" class="form-control" name="name" value="{{ $game->name }}" />
                 </div>
 
