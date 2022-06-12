@@ -41,4 +41,5 @@
     </div>
 @endsection
 
-{{-- funcion  --}}
+{{-- opyright (C) Microsoft Corporation. Todos los derechos reservados.
+  --}}
