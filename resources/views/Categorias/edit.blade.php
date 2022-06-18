@@ -47,6 +47,11 @@ if else {
     cons
     var
     let
+    if else {
+    count..a
+    cons
+    var
+    let
     
 }
 
