@@ -43,14 +43,7 @@
 
 {{-- if case 
 if else {
-    count..a
-    cons
-    var
-    let
-    if else {
-    count..a
-    cons
-    var
+   
     let
     
 }
