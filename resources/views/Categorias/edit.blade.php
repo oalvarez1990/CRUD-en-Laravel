@@ -51,3 +51,13 @@ dfgfgfg
 
  --}}
     
+ {{-- if price >= 300:
+#     print(f"Tienes un 30% de descuento. \nTu producto queda en ${price * 0.7}")
+# elif price >= 200 and price < 300:
+#     print(f"Tienes un 20% de descuento. \nTu producto queda en ${price * 0.8}")
+# elif price >= 100 and price < 200:
+#     print(f"Tienes un 10% de descuento. \nTu producto queda en ${price * 0.9}")
+# elif price < 100:
+#     print(f"Tienes un 5% de descuento. \nTu producto queda en ${price * 0.95}")
+# elif price < 0:
+#     print(f"No tienes descuento.") --}}
