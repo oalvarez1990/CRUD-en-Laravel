@@ -41,15 +41,3 @@
     </div>
 @endsection
 
-{{-- if else
-fdsfsdfdsffssfdsfds
-
- System.out.println("Jugador " + i);
-                mostrarArray(numeros_jugadores[i]);
-                 System.out.println("Arbitro");
-            pedirNumeros(numeros_arbitro);
- 
-            System.out.println("Arbitro");
-            mostrarArray(numeros_arbitro);
-
- --}}
