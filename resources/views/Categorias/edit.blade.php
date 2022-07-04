@@ -62,5 +62,25 @@
 	document.write("horas: ", calculohoras, '<BR/>');
 	document.write("Minutos: ", calculominutos, '<BR/>');
 	document.write("Segundos: ", calculosegundos, '<BR/>');
+    	var calculohoras, calculominutos, calculosegundos, unahora, undia, unminutos;
+	var dia = new Number();
+	var hora = new Number();
+	var minutos = new Number();
+	var segundos = new Number();
+	undia = 24;
+	unahora = 60;
+	unminutos = 60;
+	// ingreso datos por usario
+	document.write("Cuantos dias va calcular", '<BR/>');
+	dia = Number(prompt());
+	// Calculo de datos 
+	calculohoras = dia * undia;
+	calculominutos = calculohoras * unahora;
+	calculosegundos = calculominutos * unminutos;
+	// Impresion de informacion datos a los usuarios 
+	document.write("El/ los dia(s) son: ", dia, " dias", '<BR/>');
+	document.write("horas: ", calculohoras, '<BR/>');
+	document.write("Minutos: ", calculominutos, '<BR/>');
+	document.write("Segundos: ", calculosegundos, '<BR/>');
 
  --}}
