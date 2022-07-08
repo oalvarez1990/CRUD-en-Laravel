@@ -48,13 +48,7 @@
 	calculosegundos = calculominutos * unminutos;
 	// Impresion de informacion datos a los usuarios 
 	document.write("El/ los dia(s) son: ", dia, " dias", '<BR/>');
-	document.write("horas: ", calculohoras, '<BR/>');
-	document.write("Minutos: ", calculominutos, '<BR/>');
-	document.write("Segundos: ", calculosegundos, '<BR/>');
-    	var calculohoras, calculominutos, calculosegundos, unahora, undia, unminutos;
-	var dia = new Number();
-	var hora = new Number();
-	var minutos = new Number();
+	
 
 
  --}}
