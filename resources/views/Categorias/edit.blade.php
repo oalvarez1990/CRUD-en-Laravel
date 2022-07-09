@@ -45,9 +45,7 @@
 	
 	calculohoras = dia * undia;
 	calculominutos = calculohoras * unahora;
-	calculosegundos = calculominutos * unminutos;
-	// Impresion de informacion datos a los usuarios 
-	document.write("El/ los dia(s) son: ", dia, " dias", '<BR/>');
+
 	
 
 
