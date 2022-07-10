@@ -43,8 +43,7 @@
 
 {{-- 
 	
-	calculohoras = dia * undia;
-	calculominutos = calculohoras * unahora;
+
 
 	
 
