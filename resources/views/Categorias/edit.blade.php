@@ -43,7 +43,42 @@
 
 {{-- 
 	
-
+si tiempo<=10 y sueldo<=300000 Entonces		
+		incremento= sueldo*12/100
+		totalIncremento=incremento
+	SiNo		
+		si sueldo>=300000 y sueldo<=500000 Entonces
+			incremento= sueldo*10/100
+			totalIncremento=incremento
+		SiNo
+			si sueldo>=500000 Entonces
+				incremento=sueldo*14/100
+				totalIncremento=incremento
+			FinSi
+		FinSi
+		si tiempo>=10 y tiempo<=20 Entonces
+			si sueldo<=300000 Entonces
+				incremento=sueldo*14/100
+				totalIncremento=incremento
+			SiNo
+				si sueldo>300000 y sueldo<=500000 Entonces
+					incremento= sueldo*12/100
+					totalIncremento=incremento
+				SiNo
+					si sueldo>500000 Entonces
+						incremento=sueldo*10/100
+						totalIncremento=incremento
+					sino 
+						si tiempo>20 Entonces
+							incremento=sueldo*15/100
+							totalIncremento=incremento
+						FinSi
+					FinSi
+					
+				FinSi
+			FinSi
+		FinSi
+	FinSi
 
 
 
