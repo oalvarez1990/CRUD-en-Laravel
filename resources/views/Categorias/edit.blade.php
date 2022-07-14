@@ -80,6 +80,17 @@ si tiempo<=10 y sueldo<=300000 Entonces
 		FinSi
 	FinSi
 
-
+Algoritmo cicloMIentras
+	//tabla de multiplicar 	
+	Definir tabla, resultado,i Como Entero
+	i=1
+	Escribir "Ingresar valor tabla"
+	leer tabla	
+	Mientras i<=10 Hacer		
+		resultado=tabla*i
+		Mostrar "",tabla " * " i, " = ", resultado
+		i=i+1
+	Fin Mientras
+FinAlgoritmo
 
  --}}
